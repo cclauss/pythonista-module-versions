@@ -13,6 +13,8 @@ def get_module_version(in_module_name = 'requests'):
             if attr_name != '__version__':
                 print(fmt.format(attr_name))
             the_attr = getattr(mod, attr_name)
+            if isinstance(the_attr, tuple):  # mechanize workaround
+                the_attr = '.'.join([str(i) for i in the_attr[:3]])
             return the_attr() if callable(the_attr) else the_attr
     return '?' * 5
 
