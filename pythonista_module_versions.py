@@ -30,17 +30,20 @@ def get_module_version_from_pypi(module_name = 'bs4'):
 #    print ('{:<10} {}'.format(pkg[1], get_module_version(pkg[1])))
 #print('=' * 16)
 
-# start the output with a markdown literal
-print('''```
-| module     | local   | PyPI    |
-| name       | version | version |
-| ---------- | ------- | ------- |''')
+fmt = '| {:<10} | {:<7} | {:<7} |'
+
+print('```') # start the output with a markdown literal
+print(fmt.format('module', 'local', 'PyPI'))
+print(fmt.format('name', 'version', 'version'))
+div = fmt.format('-' * 10, '-' * 7, '-' * 7)
+print(div)
 modules = '''bottle bs4 dateutil dropbox ecdsa evernote faker feedparser flask
              html5lib markdown markdown2 mechanize paramiko PIL pyflakes
              pygments pyparsing requests six werkzeug wsgiref xmltodict'''
 for module_name in modules.split():
-    print('| {:<10} | {:<7} | {:<7} |'.format(module_name,
-                                    get_module_version(module_name),
-                                    get_module_version_from_pypi(module_name)))
+    local_version = get_module_version(module_name)
+    pypi_version  = get_module_version_from_pypi(module_name)
+    #if local_version != pypi_version and '?' not in local_version:
+    print(fmt.format(module_name, local_version, pypi_version))
+print(div)
 print('```')  # end of markdown literal
-print('=' * 16)
