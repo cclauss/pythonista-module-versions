@@ -38,8 +38,8 @@ print(fmt.format('name', 'version', 'version'))
 div = fmt.format('-' * 10, '-' * 7, '-' * 7)
 print(div)
 modules = '''bottle bs4 dateutil dropbox ecdsa evernote faker feedparser flask
-             html5lib markdown markdown2 mechanize paramiko PIL pyflakes
-             pygments pyparsing requests six werkzeug wsgiref xmltodict'''
+             html5lib markdown markdown2 matplotlib mechanize numpy paramiko PIL
+             pyflakes pygments pyparsing requests six werkzeug wsgiref xmltodict'''
 for module_name in modules.split():
     local_version = get_module_version(module_name)
     pypi_version  = get_module_version_from_pypi(module_name)
