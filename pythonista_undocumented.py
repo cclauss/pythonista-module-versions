@@ -1,4 +1,4 @@
-import bs4, importlib, inspect, requests, itertools
+Aimport bs4, importlib, inspect, requests, itertools
 
 modules = '''canvas clipboard console contacts editor keychain linguistictagger
              location motion notification photos scene sound speech ui'''.split()
@@ -11,11 +11,6 @@ def inspect_functions(module_name):
 def get_html(mondule_name):
     fmt = 'http://omz-software.com/pythonista/docs/ios/{}.html'
     return requests.get(fmt.format(module_name)).text
-
-def get_html_offline(mondule_name):
-    fmt = 'html/{}.html'
-    with open(fmt.format(module_name)) as in_file:
-        return in_file.read()
 
 def website_functions(module_name):
     headerlinks = bs4.BeautifulSoup(get_html(module_name)).find_all('a', 'headerlink')
