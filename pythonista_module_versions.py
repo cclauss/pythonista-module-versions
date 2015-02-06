@@ -1,5 +1,11 @@
 import bs4, importlib, requests  #, pkgutil
 
+modules = '''bottle bs4 cffi ctypes dateutil dropbox ecdsa evernote faker feedparser flask html5lib
+             itsdangerous jedi jinja2 markdown markdown2 matplotlib mechanize numpy oauth2 paramiko
+             PIL pyflakes pygments pyparsing PyPDF2 pytz qrcode reportlab requests simpy six
+             sqlalchemy sympy  werkzeug wsgiref xhtml2pdf xmltodict yaml'''.split()
+
+# Translate from Python module --> PyPI module name
 pypi_dict = { 'bs4'      : 'beautifulsoup4',
               'dateutil' : 'py-dateutil',
               'faker'    : 'Faker',
@@ -38,11 +44,8 @@ print(fmt.format('module', 'local', 'PyPI'))
 print(fmt.format('name', 'version', 'version'))
 div = fmt.format('-' * 10, '-' * 7, '-' * 7)
 print(div)
-modules = '''bottle bs4 cffi ctypes dateutil dropbox ecdsa evernote faker feedparser flask html5lib
-             itsdangerous jedi jinja2 markdown markdown2 matplotlib mechanize numpy oauth2 paramiko
-             PIL pyflakes pygments pyparsing PyPDF2 pytz qrcode reportlab requests simpy six
-             sqlalchemy sympy  werkzeug wsgiref xhtml2pdf xmltodict yaml'''
-for module_name in modules.split():
+
+for module_name in modules:
     local_version = get_module_version(module_name)
     pypi_version  = get_module_version_from_pypi(module_name)
     #if local_version != pypi_version and '?' not in local_version:
