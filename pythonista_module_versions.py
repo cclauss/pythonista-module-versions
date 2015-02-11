@@ -9,7 +9,10 @@ pypi_dict = { 'bs4'      : 'beautifulsoup4',
               'Crypto'   : 'pycrypto'}
 
 modules = '''bottle bs4 cffi Crypto ctypes dateutil dropbox ecdsa evernote faker feedparser flask
-             html2text html5lib httplib2 itsdangerous jedi jinja2 markdown markdown2 matplotlib mechanize mpmath numpy oauth2 paramiko parsedatetime PIL pycparser pyflakes pygments pyparsing PyPDF2 pytz qrcode reportlab requests simpy six sqlalchemy sympy thrift werkzeug wsgiref xhtml2pdf xmltodict yaml'''
+             html2text html5lib httplib2 itsdangerous jedi jinja2 markdown markdown2 matplotlib
+             mechanize mpmath numpy oauth2 paramiko parsedatetime PIL pycparser pyflakes pygments
+             pyparsing PyPDF2 pytz qrcode reportlab requests simpy six sqlalchemy sympy thrift
+             werkzeug wsgiref xhtml2pdf xmltodict yaml'''
              
 def get_module_version(in_module_name = 'requests'):
     mod = importlib.import_module(in_module_name)
