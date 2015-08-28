@@ -2,13 +2,14 @@
 import bs4, importlib, requests #, pkgutil
 
 # Translate from Python module --> PyPI module name
-pypi_dict = { 'bs4'      : 'beautifulsoup4',
-              'dateutil' : 'py-dateutil',
-              'faker'    : 'Faker',
-              'sqlite3'  : 'pysqlite',
-              'yaml'     : 'PyYAML',
-              'Crypto'   : 'pycrypto',
-              'PIL'      : 'Pillow' }
+pypi_dict = { 'bs4'       : 'beautifulsoup4',
+              'dateutil'  : 'py-dateutil',
+              'faker'     : 'Faker',
+              'sqlite3'   : 'pysqlite',
+              'yaml'      : 'PyYAML',
+              'xhtml2pdf' : 'pisa',
+              'Crypto'    : 'pycrypto',
+              'PIL'       : 'Pillow' }
 
 modules = '''bottle bs4 Crypto ctypes dateutil dropbox ecdsa evernote faker feedparser flask
              html2text html5lib httplib2 itsdangerous jedi jinja2 markdown markdown2 matplotlib
