@@ -1,7 +1,7 @@
 pythonista-module-versions
 ==========================
 
-Compare the version numbers of extra modules in Pythonista with PyPI.  ARun on Pythonista beta v1.6 build 160033
+Compare the version numbers of extra modules in Pythonista with PyPI.  A run on Pythonista beta v1.6 build 160033:
 
 ```
 | module        | local    | PyPI       | 
