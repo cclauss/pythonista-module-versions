@@ -5,7 +5,6 @@ Compare the version numbers of extra modules in Pythonista with PyPI.  A run on 
 
 * `ctypes` is higher that PyPI!
 * `dateutil` is probably the correct version for Python 2.7.
-* `xhtml2pdf` version numbers make no sense!
 
 
 ```
@@ -60,7 +59,7 @@ Compare the version numbers of extra modules in Pythonista with PyPI.  A run on 
 | thrift        | ?????    | 0.9.2      | ?????
 | werkzeug      | 0.9.4    | 0.10.4     | Upgrade?
 | wsgiref       | ?????    | 0.1.2      | ?????
-| xhtml2pdf     | 3.0.33   | 0.0.6      | Upgrade?
+| xhtml2pdf     | 3.0.33   | 3.0.33     | 
 | xmltodict     | 0.8.7    | 0.9.2      | Upgrade?
 | yaml          | 3.09     | 3.11       | Upgrade?
 | ------------- | -------- | ---------- | 
