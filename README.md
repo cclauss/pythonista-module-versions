@@ -15,7 +15,6 @@ Compare the version numbers of extra modules in Pythonista with PyPI.  A run on 
 | bottle        | 0.12.5   | 0.12.8     | Upgrade?
 | bs4           | 4.3.2    | 4.4.0      | Upgrade?
 | Crypto        | 2.6      | 2.6.1      | Upgrade?
-| ctypes        | 1.1.0    | 1.0.2      | Upgrade?
 | dateutil      | 1.5-mpl  | 2.2        | Upgrade?
 | dropbox       | ?????    | 3.22       | ?????
 | ecdsa         | 0.11     | 0.13       | Upgrade?
