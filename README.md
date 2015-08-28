@@ -5,6 +5,7 @@ Compare the version numbers of extra modules in Pythonista with PyPI.  A run on 
 
 * `ctypes` is higher that PyPI!
 * `dateutil` is probably the correct version for Python 2.7.
+* flask, jedi, mechanize, Pillow (PIL), and xhtml2pdf (pisa) are current.
 
 
 ```
