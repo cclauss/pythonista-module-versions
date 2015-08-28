@@ -1,5 +1,5 @@
 # coding: utf-8
-import bs4, importlib, requests, pkgutil
+import bs4, importlib, requests #, pkgutil
 
 # Translate from Python module --> PyPI module name
 pypi_dict = { 'bs4'      : 'beautifulsoup4',
@@ -15,7 +15,7 @@ modules = '''bottle bs4 Crypto ctypes dateutil dropbox ecdsa evernote faker feed
              mechanize midiutil mpmath numpy oauth2 paramiko parsedatetime PIL pycparser pyflakes
              pygments pyparsing PyPDF2 pytz qrcode reportlab requests simpy six sqlalchemy sqlite3
              sympy thrift werkzeug wsgiref xhtml2pdf xmltodict yaml'''.split()
-             
+
 def get_module_version(in_module_name = 'requests'):
     mod = importlib.import_module(in_module_name)
     fmt = "### hasattr({}, '{}')".format(in_module_name, '{}')
@@ -26,7 +26,7 @@ def get_module_version(in_module_name = 'requests'):
             the_attr = getattr(mod, attr_name)
             if isinstance(the_attr, tuple):  # mechanize workaround
                 the_attr = '.'.join([str(i) for i in the_attr[:3]])
-            return the_attr() if callable(the_attr) else the_attr
+            return unicode(the_attr() if callable(the_attr) else the_attr)
     return '?' * 5
 
 def get_module_version_from_pypi(module_name = 'bs4'):
@@ -38,7 +38,7 @@ def get_module_version_from_pypi(module_name = 'bs4'):
         return soup.find('div', class_='section').a.string.split()[-1]
     return vers_str
 
-'''    
+'''
 for _, pkg_name, _ in pkgutil.walk_packages():
     #print(pkg)
     #pkg_name = pkg[1]
@@ -80,10 +80,11 @@ print(div)
 for module_name in modules:
     local_version = get_module_version(module_name)
     pypi_version  = get_module_version_from_pypi(module_name)
-    #print(local_version, pypi_version)
-    #if local_version != pypi_version and '?' not in local_version:
-    print(fmt.format(module_name, local_version, pypi_version,
-        ('' if str(local_version) == pypi_version else 'Upgrade?')))
+    if '?' in local_version or '$' in local_version:
+        advise = local_version
+    else:
+        advise = '' if local_version == pypi_version else 'Upgrade?'
+    print(fmt.format(module_name, local_version, pypi_version, advise))
 print(div)
 print('```')  # end of markdown literal
 print('=' * 16)
