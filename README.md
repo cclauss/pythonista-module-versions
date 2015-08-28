@@ -4,7 +4,7 @@ pythonista-module-versions
 Compare the version numbers of extra modules in Pythonista with PyPI.  A run on Pythonista beta v1.6 build 160033:
 
 * `ctypes` is higher that PyPI!
-* `dateutil` is probably the correct version.
+* `dateutil` is probably the correct version for Python 2.7.
 * `xhtml2pdf` version numbers make no sense!
 
 
