@@ -3,7 +3,6 @@ pythonista-module-versions
 
 Compare the version numbers of extra modules in Pythonista with PyPI.  A run on Pythonista beta v1.6 build 160033:
 
-* `ctypes` local version is _higher than_ the PyPI version!
 * `dateutil` is probably the correct version for Python 2.7.
 * flask, jedi, mechanize, Pillow (PIL), and xhtml2pdf (pisa) are current.
 
