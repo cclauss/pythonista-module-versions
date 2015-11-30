@@ -3,7 +3,6 @@ pythonista-module-versions
 
 Compare the version numbers of extra modules in Pythonista with PyPI.  A run on Pythonista beta v1.6 build 160037:
 
-* `dateutil` is probably the correct version for Python 2.7.
 * flask, jedi, mechanize, and xhtml2pdf (pisa) are current.
 
 
