@@ -1,5 +1,5 @@
 # coding: utf-8
-import bs4, importlib, requests #, pkgutil
+import bs4, importlib, os, platform, plistlib, requests, sys  #, pkgutil
 
 # Translate from Python module --> PyPI module name
 pypi_dict = { 'bs4'       : 'beautifulsoup4',
@@ -70,10 +70,17 @@ for _, pkg_name, _ in pkgutil.walk_packages():
 print('=' * 16)
 '''
 
-fmt = '| {:<13} | {:<8} | {:<10} | {}'
-div = fmt.format('-' * 13, '-' * 8, '-' * 10, '')
+def pythonista_version():
+    plist = plistlib.readPlist(os.path.abspath(os.path.join(sys.executable, '..', 'Info.plist')))
+    return '{CFBundleShortVersionString} ({CFBundleVersion})'.format(**plist)
 
 print('```') # start the output with a markdown literal
+fmt = 'Pythonista version {0} on iOS {1} on an {3}.'
+print(fmt.format(pythonista_version(), *platform.mac_ver()))
+print('=' * 57)
+
+fmt = '| {:<13} | {:<8} | {:<10} | {}'
+div = fmt.format('-' * 13, '-' * 8, '-' * 10, '')
 print(fmt.format('module', 'local', 'PyPI', ''))
 print(fmt.format('name', 'version', 'version', ''))
 
