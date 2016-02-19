@@ -1,7 +1,7 @@
 pythonista-module-versions
 ==========================
 
-Compare the version numbers of extra modules in Pythonista with PyPI.  A run on Pythonista beta v1.6 build 160037:
+Compare the version numbers of extra modules in Pythonista2 __and Pythonista3__ with PyPI.
 
 * In Python2, flask, jedi, mechanize, and xhtml2pdf (pisa) are current.
 
