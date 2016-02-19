@@ -62,4 +62,56 @@ Pythonista version 2.0 (200003) on iOS 9.2 on an iPad5,4.
 | xmltodict     | 0.8.7    | 0.9.2      | Upgrade?
 | yaml          | 3.09     | 3.11       | Upgrade?
 | ------------- | -------- | ---------- | 
+
+
+Pythonista version 3.0 (300001) on iOS 9.2.1 on an iPad5,4.
+=========================================================
+| module        | local    | PyPI       | 
+| name          | version  | version    | 
+| ------------- | -------- | ---------- | 
+| bottle        | 0.12.5   | 0.12.9     | Upgrade?
+| bs4           | 4.4.1    | 4.4.1      | 
+| Crypto        | 2.6      | 2.6.1      | Upgrade?
+| dateutil      | 2.2      | 2.2        | 
+| dropbox       | 5.2.1    | 5.2.2      | Upgrade?
+| ecdsa         | UNKNOWN  | 0.13       | Upgrade?
+| evernote      | ?????    | 1.25.1     | ?????
+| faker         | ?????    | 0.0.4      | ?????
+| feedparser    | 5.2.1    | 5.2.1      | 
+| flask         | 0.10.1   | 0.10.1     | 
+| html2text     | 2014.4.5 | 2016.1.8   | Upgrade?
+| html5lib      | 0.999    | 0.9999999  | Upgrade?
+| httplib2      | 0.9.2    | 0.9.2      | 
+| itsdangerous  | ?????    | 0.24       | ?????
+| jedi          | 0.9.0    | 0.9.0      | 
+| jinja2        | 2.7      | 2.8        | Upgrade?
+| markdown      | 2.6.2    | 2.6.5      | Upgrade?
+| markdown2     | 2.2.1    | 2.3.0      | Upgrade?
+| matplotlib    | 1.4.0    | 1.5.1      | Upgrade?
+| mpmath        | 0.18     | 0.19       | Upgrade?
+| numpy         | 1.8.0    | Found      | Upgrade?
+| oauth2        | 1.9.0.post1 | 1.9.0.post1 | 
+| paramiko      | 1.16.0   | 1.16.0     | 
+| parsedatetime | 1.5      | 1.5        | 
+### hasattr(PIL, 'PILLOW_VERSION')
+| PIL           | 2.9.0    | 3.1.1      | Upgrade?
+| pycparser     | 2.10     | 2.14       | Upgrade?
+| pyflakes      | 1.0.0    | 1.0.0      | 
+| pygments      | 2.1      | 2.1.1      | Upgrade?
+| pyparsing     | 2.0.1    | 2.1.0      | Upgrade?
+| PyPDF2        | 1.22     | 1.25.1     | Upgrade?
+| pytz          | 2015.7   | 2015.7     | 
+| qrcode        | ?????    | 5.2.2      | ?????
+| reportlab     |  $Id$    | 3.3.0      |  $Id$ 
+| requests      | 2.9.1    | 2.9.1      | 
+| simpy         | 3.0.8    | 3.0.8      | 
+| six           | 1.6.1    | 1.10.0     | Upgrade?
+| sqlalchemy    | 0.9.7    | 1.0.12     | Upgrade?
+### hasattr(sqlite3, 'version')
+| sqlite3       | 2.6.0    | 2.8.1      | Upgrade?
+| thrift        | ?????    | 0.9.3      | ?????
+| werkzeug      | 0.9.4    | 0.11.4     | Upgrade?
+| xmltodict     | 0.8.7    | 0.9.2      | Upgrade?
+| ------------- | -------- | ---------- | 
 ```
+
