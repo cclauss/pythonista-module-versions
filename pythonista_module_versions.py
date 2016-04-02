@@ -11,29 +11,40 @@ pypi_dict = { 'bs4'       : 'beautifulsoup4',
               'Crypto'    : 'pycrypto',
               'PIL'       : 'Pillow' }
 
-modules = '''bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser flask html2text
-             html5lib httplib2 itsdangerous jedi jinja2 markdown markdown2 matplotlib mechanize
-             midiutil mpmath numpy oauth2 paramiko parsedatetime PIL pycparser pyflakes pygments
-             pyparsing PyPDF2 pytz qrcode reportlab requests simpy six sqlalchemy sqlite3 sympy
-             thrift werkzeug wsgiref xhtml2pdf xmltodict yaml'''.split()
+modules = '''bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser
+             flask html2text html5lib httplib2 itsdangerous jedi jinja2
+             markdown markdown2 matplotlib mechanize midiutil mpmath numpy
+             oauth2 paramiko parsedatetime PIL pycparser pyflakes pygments
+             pyparsing PyPDF2 pytz qrcode reportlab requests screenplain simpy
+             six sqlalchemy sqlite3 sympy thrift werkzeug wsgiref xhtml2pdf
+             xmltodict yaml'''.split()
 
-def get_module_version(in_module_name = 'requests'):
+modules = '''bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser
+flask html2text
+             html5lib httplib2 itsdangerous jedi jinja2 markdown markdown2 matplotlib
+          mpmath numpy oauth2 paramiko parsedatetime PIL pycparser pyflakes pygments
+             pyparsing PyPDF2 pytz qrcode reportlab requests simpy six sqlalchemy
+             sqlite3 thrift werkzeug xmltodict'''.split()
+
+def get_module_version(in_module_name='requests'):
     mod = importlib.import_module(in_module_name)
     fmt = "### hasattr({}, '{}')".format(in_module_name, '{}')
     for attr_name in '__version__ version __VERSION__ PILLOW_VERSION VERSION'.split():
+        if in_module_name == 'markdown' and attr_name == '__version__':
+            continue
         if hasattr(mod, attr_name):
             if attr_name != '__version__':
                 print(fmt.format(attr_name))
             the_attr = getattr(mod, attr_name)
             if isinstance(the_attr, tuple):  # mechanize workaround
                 the_attr = '.'.join([str(i) for i in the_attr[:3]])
-            return unicode(the_attr() if callable(the_attr) else the_attr)
+            return str(the_attr() if callable(the_attr) else the_attr)
     return '?' * 5
 
-def get_module_version_from_pypi(module_name = 'bs4'):
+def get_module_version_from_pypi(module_name='bs4'):
     module_name = pypi_dict.get(module_name, module_name)
     url = 'https://pypi.python.org/pypi/{}'.format(module_name)
-    soup = bs4.BeautifulSoup(requests.get(url).content)
+    soup = bs4.BeautifulSoup(requests.get(url).content, 'html5lib')
     vers_str = soup.title.string.partition(':')[0].split()[-1]
     if vers_str == 'Packages':
         return soup.find('div', class_='section').a.string.split()[-1]
@@ -79,8 +90,8 @@ fmt = 'Pythonista version {0} on iOS {1} on an {3}.'
 print(fmt.format(pythonista_version(), *platform.mac_ver()))
 print('=' * 57)
 
-fmt = '| {:<13} | {:<8} | {:<10} | {}'
-div = fmt.format('-' * 13, '-' * 8, '-' * 10, '')
+fmt = '| {:<13} | {:<11} | {:<11} | {}'
+div = fmt.format('-' * 13, '-' * 11, '-' * 11, '')
 print(fmt.format('module', 'local', 'PyPI', ''))
 print(fmt.format('name', 'version', 'version', ''))
 
