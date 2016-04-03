@@ -112,6 +112,7 @@ Pythonista version 3.0 (300007) on iOS 9.3.1 on an iPad5,4.
 | sqlalchemy    | 0.9.7       | 1.0.12      | Upgrade?
 ### hasattr(sqlite3, 'version')
 | sqlite3       | 2.6.0       | 2.8.2       | Upgrade?
+| sympy         | 0.7.4.1     | 1.0         | Upgrade?
 | thrift        | ?????       | 0.9.3       | ?????
 | werkzeug      | 0.9.4       | 0.11.5      | Upgrade?
 | wsgiref       | ?????       | 0.1.2       | ?????
