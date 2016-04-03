@@ -82,8 +82,8 @@ def pythonista_version():
     return '{CFBundleShortVersionString} ({CFBundleVersion})'.format(**plist)
 
 print('```') # start the output with a markdown literal
-fmt = 'Pythonista version {0} on iOS {1} on an {3}.'
-print(fmt.format(pythonista_version(), *platform.mac_ver()))
+fmt = 'Pythonista version {0} running Python {1} on iOS {2} on an {4}.'
+print(fmt.format(pythonista_version(), platform.python_version(), *platform.mac_ver()))
 print('=' * 57)
 
 fmt = '| {:<13} | {:<11} | {:<11} | {}'
