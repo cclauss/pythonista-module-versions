@@ -15,10 +15,10 @@ modules = '''bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser
              flask html2text html5lib httplib2 itsdangerous jedi jinja2
              markdown markdown2 matplotlib mpmath numpy oauth2 paramiko
              parsedatetime PIL pycparser pyflakes pygments pyparsing PyPDF2
-             pytz qrcode reportlab requests simpy six sqlalchemy sqlite3 thrift
-             werkzeug wsgiref xmltodict yaml'''.split()
+             pytz qrcode reportlab requests simpy six sqlalchemy sqlite3 sympy
+             thrift werkzeug wsgiref xmltodict yaml'''.split()
 
-## Removed: mechanize midiutil screenplain sympy xhtml2pdf
+## Removed: mechanize midiutil screenplain xhtml2pdf
 
 def get_module_version(in_module_name='requests'):
     mod = importlib.import_module(in_module_name)
