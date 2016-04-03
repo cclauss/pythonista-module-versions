@@ -26,12 +26,14 @@ def get_module_version(in_module_name='requests'):
     for attr_name in '__version__ version __VERSION__ PILLOW_VERSION VERSION'.split():
         if in_module_name == 'markdown' and attr_name == '__version__':
             continue
+        if in_module_name == 'reportlab':
+            attr_name = 'Version'
         if hasattr(mod, attr_name):
             if attr_name != '__version__':
                 print(fmt.format(attr_name))
             the_attr = getattr(mod, attr_name)
-            if isinstance(the_attr, tuple):  # mechanize workaround
-                the_attr = '.'.join([str(i) for i in the_attr[:3]])
+            #if isinstance(the_attr, tuple):  # mechanize workaround
+            #    the_attr = '.'.join([str(i) for i in the_attr[:3]])
             return str(the_attr() if callable(the_attr) else the_attr)
     return '?' * 5
 
