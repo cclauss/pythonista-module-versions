@@ -65,7 +65,7 @@ Pythonista version 2.0.1 (201004) on iOS 9.2.1 on an iPad5,4.
 | ------------- | -------- | ---------- | 
 
 
-Pythonista version 3.0 (300007) on iOS 9.3.1 on an iPad5,4.
+Pythonista version 3.0 (300015) running Python 3.5.1 on iOS 9.3.2 on an iPad5,4.
 =========================================================
 | module        | local       | PyPI        | 
 | name          | version     | version     | 
@@ -74,7 +74,7 @@ Pythonista version 3.0 (300007) on iOS 9.3.1 on an iPad5,4.
 | bs4           | 4.4.1       | 4.4.1       | 
 | Crypto        | 2.6         | 2.6.1       | Upgrade?
 | dateutil      | 2.2         | 2.2         | 
-| dropbox       | 5.2.1       | 6.1         | Upgrade?
+| dropbox       | 5.2.1       | 6.3.0       | Upgrade?
 | ecdsa         | UNKNOWN     | 0.13        | Upgrade?
 | evernote      | ?????       | 1.25.1      | ?????
 | faker         | ?????       | 0.1.4       | ?????
@@ -91,32 +91,31 @@ Pythonista version 3.0 (300007) on iOS 9.3.1 on an iPad5,4.
 | markdown2     | 2.2.1       | 2.3.1       | Upgrade?
 | matplotlib    | 1.4.0       | 1.5.1       | Upgrade?
 | mpmath        | 0.18        | 0.19        | Upgrade?
-| numpy         | 1.8.0       | 1.11.0      | Upgrade?
+| numpy         | 1.8.0       | 1.11.1rc1   | Upgrade?
 | oauth2        | 1.9.0.post1 | 1.9.0.post1 | 
-| paramiko      | 1.16.0      | 1.16.0      | 
+| paramiko      | 1.16.0      | 2.0.0       | Upgrade?
 | parsedatetime | 1.5         | 2.1         | Upgrade?
 ### hasattr(PIL, 'PILLOW_VERSION')
 | PIL           | 2.9.0       | 3.2.0       | Upgrade?
 | pycparser     | 2.10        | 2.14        | Upgrade?
-| pyflakes      | 1.0.0       | 1.1.0       | Upgrade?
+| pyflakes      | 1.0.0       | 1.2.3       | Upgrade?
 | pygments      | 2.1         | 2.1.3       | Upgrade?
-| pyparsing     | 2.0.1       | 2.1.1       | Upgrade?
-| PyPDF2        | 1.22        | 1.25.1      | Upgrade?
-| pytz          | 2015.7      | 2016.3      | Upgrade?
-| qrcode        | ?????       | 5.2.2       | ?????
+| pyparsing     | 2.0.1       | 2.1.4       | Upgrade?
+| PyPDF2        | 1.22        | 1.26.0      | Upgrade?
+| pytz          | 2015.7      | 2016.4      | Upgrade?
+| qrcode        | ?????       | 5.3         | ?????
 ### hasattr(reportlab, 'Version')
 | reportlab     | 3.1.8       | 3.3.0       | Upgrade?
-| requests      | 2.9.1       | 2.9.1       | 
+| requests      | 2.9.1       | 2.10.0      | Upgrade?
 | simpy         | 3.0.8       | 3.0.8       | 
 | six           | 1.6.1       | 1.10.0      | Upgrade?
-| sqlalchemy    | 0.9.7       | 1.0.12      | Upgrade?
+| sqlalchemy    | 0.9.7       | 1.0.13      | Upgrade?
 ### hasattr(sqlite3, 'version')
 | sqlite3       | 2.6.0       | 2.8.2       | Upgrade?
-| sympy         | 0.7.4.1     | 1.0         | Upgrade?
 | thrift        | ?????       | 0.9.3       | ?????
-| werkzeug      | 0.9.4       | 0.11.5      | Upgrade?
+| werkzeug      | 0.9.4       | Found       | Upgrade?
 | wsgiref       | ?????       | 0.1.2       | ?????
 | xmltodict     | 0.8.7       | 0.10.1      | Upgrade?
 | yaml          | 3.11        | 3.11        | 
-| ------------- | ----------- | ----------- | 
+| ------------- | ----------- | ----------- |
 ```
