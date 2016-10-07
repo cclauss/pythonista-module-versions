@@ -1,6 +1,9 @@
 pythonista-module-versions
 ==========================
 
+![alt text](https://img.shields.io/badge/Python-2.7-blue.svg "Python 2.7")
+![alt text](https://img.shields.io/badge/Python-3.5-blue.svg "Python 3.5")
+
 Compare the version numbers of extra modules in Pythonista2 __and Pythonista3__ with PyPI.
 
 * In Python2, jedi is current.
