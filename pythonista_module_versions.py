@@ -11,7 +11,7 @@ pypi_dict = { 'bs4'       : 'beautifulsoup4',
               'Crypto'    : 'pycrypto',
               'PIL'       : 'Pillow' }
 
-modules = '''bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser
+modules = '''arrow bottle bs4 Crypto dateutil dropbox ecdsa evernote faker feedparser
              flask html2text html5lib httplib2 itsdangerous jedi jinja2
              markdown markdown2 matplotlib mpmath numpy oauth2 paramiko
              parsedatetime PIL pycparser pyflakes pygments pyparsing PyPDF2
