@@ -11,12 +11,15 @@ pypi_dict = { 'bs4'       : 'beautifulsoup4',
               'Crypto'    : 'pycrypto',
               'PIL'       : 'Pillow' }
 
-modules = '''arrow bottle bs4 certifi Crypto csssect cycler dateutil dropbox ecdsa et_xmlfile evernote faker feedparser
-             flask google html2text html5lib httplib2 images2gif itsdangerous jdcal jedi jinja2 libmodernize
-             markdown markdown2 markupsafe matplotlib mccabe midiutil mpl_toolkits mpmath numpy oauth2 paramiko
-             parsedatetime PIL pycparser pyflakes pygments pylab pyparsing PyPDF2
-             pytest pytz qrcode reportlab requests sgmllib simpy six sqlalchemy sqlite3 sympy
-             thrift turtle twitter wavebender werkzeug wsgiref xmltodict yaml yapf'''.split()
+modules = '''arrow bottle bs4 certifi Crypto cycler dateutil dropbox ecdsa
+             et_xmlfile evernote faker feedparser flask google html2text
+             html5lib httplib2 images2gif itsdangerous jdcal jedi jinja2
+             libmodernize markdown markdown2 markupsafe matplotlib mccabe
+             midiutil mpl_toolkits mpmath numpy oauth2 paramiko parsedatetime
+             PIL pycparser pyflakes pygments pylab pyparsing PyPDF2 pytest pytz
+             qrcode reportlab requests sgmllib simpy six sqlalchemy sqlite3
+             sympy thrift turtle twitter wavebender werkzeug wsgiref xmltodict
+             yaml yapf'''.split()
 
 ## Removed: mechanize midiutil screenplain xhtml2pdf
 
