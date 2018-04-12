@@ -2,7 +2,7 @@ arrow==0.12.1
 bottle==0.12.13
 bs4==0.0.1
 certifi=2016.02.28
-Crypto=2.6
+Crypto==1.4
 cycler=0.9.0
 dateutil=2.2
 dropbox=6.4.0
