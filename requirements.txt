@@ -5,7 +5,7 @@ certifi=2016.02.28
 Crypto==1.4
 cycler==0.10.0
 dateutil=2.2
-dropbox=6.4.0
+dropbox==8.7.1
 ecdsa
 et_xmlfile=1.0.1
 evernote
