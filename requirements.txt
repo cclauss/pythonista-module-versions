@@ -26,7 +26,7 @@ markdown==2.6.11
 markdown2==2.3.5
 markupsafe
 matplotlib==2.2.2
-mccabe=0.4.0
+mccabe==0.6.1
 midiutil
 mpl_toolkits
 mpmath=0.18
