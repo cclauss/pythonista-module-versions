@@ -6,6 +6,8 @@ pythonista-module-versions
 
 Compare the version numbers of extra modules in Pythonista with PyPI.
 
+Results: https://requires.io/github/cclauss/pythonista-module-versions/requirements/
+
 ```
 Pythonista version 3.1.1 (311016) running Python 3.6.1 on iOS 10.3.3 on an iPad3,4.
 =========================================================
