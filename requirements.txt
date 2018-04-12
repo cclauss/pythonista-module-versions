@@ -39,7 +39,7 @@ pycparser==2.18
 pyflakes==1.6.0
 pygments==2.2
 pylab
-pyparsing=2.0.1
+pyparsing==2.2.0
 PyPDF2=1.22
 pytest=3.0.5
 pytz=2015.7
