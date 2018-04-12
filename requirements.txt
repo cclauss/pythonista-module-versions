@@ -37,7 +37,7 @@ parsedatetime==2.4
 PIL==1.1.6
 pycparser==2.18
 pyflakes==1.6.0
-pygments=2.1
+pygments==2.2
 pylab
 pyparsing=2.0.1
 PyPDF2=1.22
