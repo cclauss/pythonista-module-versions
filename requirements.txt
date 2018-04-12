@@ -35,7 +35,7 @@ oauth2=1.9.0.post1
 paramiko==2.4.1
 parsedatetime==2.4
 PIL==1.1.6
-pycparser=2.10
+pycparser==2.18
 pyflakes=1.5.0
 pygments=2.1
 pylab
