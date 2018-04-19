@@ -16,7 +16,7 @@ html2text==2018.1.9
 html5lib==1.0.1
 httplib2==0.11.3
 images2gif==1.0.1
-itsdangerous
+itsdangerous==0.24
 jdcal==1.3
 jedi==0.9.0
 jinja2==2.7
