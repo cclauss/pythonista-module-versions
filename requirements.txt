@@ -31,7 +31,7 @@ mpl_toolkits
 mpmath==1.0.0
 numpy==1.14.2
 oauth2==1.9.0.post1
-paramiko==1.16.0
+paramiko==2.4.1
 parsedatetime==1.5
 Pillow==2.9.0
 pycparser==2.10
