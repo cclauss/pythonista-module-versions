@@ -4,7 +4,7 @@ bottle==0.12.13
 certifi==2018.4.16
 Crypto==2.6
 cycler==0.10.0
-dropbox==6.4.0
+dropbox==8.8.1
 ecdsa
 et_xmlfile==1.0.1
 evernote
