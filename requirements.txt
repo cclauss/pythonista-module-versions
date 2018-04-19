@@ -57,6 +57,6 @@ turtle==0.0.2
 twitter==1.18.0
 wavebender==0.3
 werkzeug==0.14.1
-wsgiref
+wsgiref==0.1.2
 xmltodict==0.8.7
 yapf==0.16.1
