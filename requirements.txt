@@ -33,7 +33,7 @@ numpy==1.14.2
 oauth2==1.9.0.post1
 paramiko==2.4.1
 parsedatetime==2.4
-Pillow==2.9.0
+Pillow==5.1.0
 pycparser==2.10
 py-dateutil==2.2
 pyflakes==1.5.0
