@@ -52,7 +52,7 @@ six==1.11.0
 sqlalchemy==1.2.6
 sqlite3==2.6.0
 sympy==1.1.1
-thrift
+thrift==0.11.0
 turtle
 twitter
 wavebender==0.3
