@@ -37,7 +37,7 @@ Pillow==5.1.0
 pycparser==2.18
 py-dateutil==2.2
 pyflakes==1.6.0
-pygments==2.1
+pygments==2.2.0
 pylab
 pyparsing==2.0.1
 PyPDF2==1.22
