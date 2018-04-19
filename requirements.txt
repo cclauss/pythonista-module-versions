@@ -22,7 +22,7 @@ jedi==0.12.0
 jinja2==2.10
 libmodernize==0.5
 markdown==2.6.11
-markdown2==2.2.1
+markdown2==2.3.5
 markupsafe
 matplotlib==1.4.0
 mccabe==0.4.0
