@@ -47,7 +47,7 @@ qrcode
 reportlab==3.1.8
 requests==2.9.1
 sgmllib
-simpy==3.0.8
+simpy==3.0.10
 six==1.6.1
 sqlalchemy==0.9.7
 sqlite3==2.6.0
