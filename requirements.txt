@@ -59,4 +59,4 @@ wavebender==0.3
 werkzeug==0.14.1
 wsgiref==0.1.2
 xmltodict==0.11.0
-yapf==0.16.1
+yapf==0.21.0
