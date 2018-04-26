@@ -10,7 +10,7 @@ et_xmlfile==1.0.1
 evernote
 faker
 feedparser==5.2.1
-flask==0.10.1
+flask==1.0
 google
 html2text==2014.4.5
 html5lib==0.999
