@@ -2,7 +2,7 @@ arrow==0.10.0
 beautifulsoup4==4.4.1
 bottle==0.12.5
 certifi==2016.02.28
-Crypto==2.6
+Crypto==1.4
 cycler==0.9.0
 dropbox==6.4.0
 ecdsa
