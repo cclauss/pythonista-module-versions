@@ -28,7 +28,7 @@ matplotlib==1.4.0
 mccabe==0.4.0
 midiutil
 mpl_toolkits
-mpmath==0.18
+mpmath==1.1.0
 numpy==1.8.0
 oauth2==1.9.0.post1
 paramiko==1.16.0
