@@ -5,5 +5,5 @@ workflow "GitHub Action for pyup Safety" {
 
 action "safety command" {
   uses = "cclauss/GitHub-Action-for-pyup-Safety-CI@master"
-  args = "safety check --full-report"
+  args = "safety check --full-report -r requirements.txt"
 }
