@@ -1,0 +1,12 @@
+on: push
+name: GitHub Action for pyup Safety
+jobs:
+  safetyCommand:
+    name: safety command
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: safety command
+      uses: cclauss/GitHub-Action-for-pyup-Safety-CI@master
+      with:
+        args: safety check --full-report -r requirements.txt
