@@ -1,5 +1,5 @@
 arrow==0.10.0
-beautifulsoup4==4.4.1
+beautifulsoup4==4.9.1
 bottle==0.12.5
 certifi==2016.02.28
 Crypto==2.6
