@@ -19,7 +19,7 @@ images2gif
 itsdangerous
 jdcal==1.3
 jedi==0.9.0
-jinja2==2.7
+jinja2==2.11.3
 libmodernize==0.5
 markdown==2.6.2
 markdown2==2.2.1
