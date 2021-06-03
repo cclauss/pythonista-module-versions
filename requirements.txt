@@ -54,7 +54,7 @@ sqlite3==2.6.0
 sympy==0.7.4.1
 thrift
 turtle
-twitter
+twitter==1.19.2
 wavebender==0.3
 werkzeug==0.9.4
 wsgiref
