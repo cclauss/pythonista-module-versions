@@ -9,7 +9,7 @@ ecdsa
 et_xmlfile==1.0.1
 evernote
 faker
-feedparser==5.2.1
+feedparser==6.0.5
 flask==0.10.1
 google
 html2text==2014.4.5
