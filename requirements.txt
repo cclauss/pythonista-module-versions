@@ -49,7 +49,7 @@ requests==2.9.1
 sgmllib
 simpy==3.0.8
 six==1.6.1
-sqlalchemy==0.9.7
+sqlalchemy==1.4.22
 sqlite3==2.6.0
 sympy==0.7.4.1
 thrift
