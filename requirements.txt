@@ -24,7 +24,7 @@ libmodernize==0.5
 markdown==2.6.2
 markdown2==2.2.1
 markupsafe
-matplotlib==1.4.0
+matplotlib==3.4.3
 mccabe==0.4.0
 midiutil
 mpl_toolkits
