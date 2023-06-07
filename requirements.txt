@@ -56,7 +56,7 @@ thrift
 turtle
 twitter==1.19.6
 wavebender==0.3
-werkzeug==0.9.4
+werkzeug==2.3.5
 wsgiref
 xmltodict==0.8.7
 yapf==0.16.1
