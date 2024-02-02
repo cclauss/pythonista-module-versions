@@ -42,7 +42,7 @@ pylab
 pyparsing==2.0.1
 PyPDF2==1.22
 pytest==3.0.5
-pytz==2015.7
+pytz==2024.1
 qrcode
 reportlab==3.1.8
 requests==2.9.1
