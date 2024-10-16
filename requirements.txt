@@ -58,5 +58,5 @@ twitter==1.19.6
 wavebender==0.3
 werkzeug==0.9.4
 wsgiref
-xmltodict==0.8.7
+xmltodict==0.14.2
 yapf==0.16.1
