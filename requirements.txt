@@ -8,7 +8,7 @@ dropbox==6.4.0
 ecdsa
 et_xmlfile==1.0.1
 evernote
-faker
+faker==12.2.0
 feedparser==5.2.1
 flask==0.10.1
 google
