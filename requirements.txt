@@ -5,7 +5,7 @@ certifi==2016.02.28
 Crypto==2.6
 cycler==0.9.0
 dropbox==6.4.0
-ecdsa
+ecdsa==0.15
 et_xmlfile==1.0.1
 evernote
 faker
