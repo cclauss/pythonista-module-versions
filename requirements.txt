@@ -34,7 +34,7 @@ oauth2==1.9.0.post1
 paramiko==1.16.0
 parsedatetime==1.5
 Pillow==2.9.0
-pycparser==2.10
+pycparser==2.19
 py-dateutil==2.2
 pyflakes==1.5.0
 pygments==2.1
